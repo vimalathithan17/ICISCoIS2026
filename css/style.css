@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+    font-size: 10px;
+
+}
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+section{
+  border: 5px solid rebeccapurple;
+}
+a{
+  border: 5px solid green;
+  text-decoration: none;
+  color: chocolate;
+}
+div{
+  border: 5px solid orangered;
+}
+.bg_container{
+  width: 85%;
+  margin: auto;
+}
+.logo{
+  margin: 0.5rem;
+}
+.top{
+  margin:3rem;
+}
+#l1{
+  width:50px;
+  height:60px;
+}
+#l2{
+  width:80px;
+  height:60px;
+}
+#l3{
+  width:60px;
+  height:50px;
+}
+.nav_wrapper{
+  position: relative;
+  margin:1rem;
+}
+nav{
+  background-color:rgb(55, 24, 128);
+  width:100%;
+  position :fixed;
+  top:0;
+  left: 0;
+  display:flex;
+  justify-content: space-around;
+}
+.navbar{
+  padding: 0;
+  border: 5px solid blueviolet;
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  list-style: none;
+}
+.com_grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.com_grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+header h1,header p,.home h1,.home p,.head{
+  margin: 0 auto 1rem auto;
+  width: 80%;
+  text-transform: uppercase;
+
+}
+header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.credits{
+  text-align: center;
+}
+.topic_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.fee{
+  display:flex;
+
+}
+.fee_table{
+  width:50%;
+}
+.fee_cell{
+  padding: 1rem;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.pay_ul{
+  list-style: none;
+}
+
+.contact_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.venue_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+.venue_grid>*{
+  width: 100%;
+}
+.btm_grid{
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  column-gap: 1rem;
+}
+
+  
