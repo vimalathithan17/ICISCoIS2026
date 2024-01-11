@@ -11,24 +11,29 @@ font-family: 'Raleway', sans-serif;
 }
 :root {
     font-size: 10px;
-
+    --v:rgb(14, 27, 77);
+  --button-clr:rgb(30, 42, 160);
 }
 body{
     margin: 0;
     border: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
+    color: rgb(15, 16, 53);
 }
 section{
-  border: 5px solid rebeccapurple;
+  /*border: 5px solid rebeccapurple;*/
 }
-a{
-  border: 5px solid green;
+nav a{
+  /*border: 5px solid green;*/
+  padding: 0.6rem 1rem;
+  border-radius: 0.7rem;
+  background-color: rgb(15, 16, 53);
   text-decoration: none;
-  color: chocolate;
+  color: rgb(255, 255, 255);
 }
 div{
-  border: 5px solid orangered;
+  /*border: 5px solid orangered;*/
 }
 .bg_container{
   width: 85%;
@@ -57,17 +62,20 @@ div{
   margin:1rem;
 }
 nav{
-  background-color:rgb(55, 24, 128);
+  background-color:rgb(54, 84, 134);
   width:100%;
   position :fixed;
   top:0;
   left: 0;
   display:flex;
   justify-content: space-around;
+  align-items: center;
 }
 .navbar{
+  margin-left: 0.5rem;
+  margin-right: 1rem;
   padding: 0;
-  border: 5px solid blueviolet;
+  /*border: 5px solid blueviolet;*/
   display: flex;
   width:100%;
   justify-content: space-between;
@@ -77,36 +85,102 @@ nav{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
-  row-gap: 2rem;
+  row-gap: 3rem;
+  grid-auto-rows: 1fr;
+}
+.com_grid1>.member,.com_grid1>.member>*{
+  margin: auto;
+  text-align: center;
+}
+.member .container,.international .member .content,.technical .member .content ,.organizing .member .content{
+  border: 1px solid black;
+}
+.member .content{
+  display: flex;
+  flex-flow: column;
+}
+.name_p,.designation_p{
+  display: inline-block;
+  width:100%;
+}
+.member .content >*{
+margin: auto;
+text-align: center;
+}
+.name_p{
+  font-weight: bolder;
 }
 .com_grid2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
+  grid-auto-rows: 1fr;
 }
-
+.organizing .member{
+  width: 90%;
+}
+.home h1{
+  font-size: 4rem;
+}
+header h1{
+  font-size: 3.4rem;
+} 
+header p,.home p{
+  font-size: 1.9rem;
+}
+h2{
+  font-size: 2.6rem;
+}
+p{
+  font-size: 1.6rem;
+}
 header h1,header p,.home h1,.home p,.head{
   margin: 0 auto 1rem auto;
   width: 80%;
   text-transform: uppercase;
-
 }
 header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.credits{
   text-align: center;
 }
-.topic_grid{
+
+.about_item{
+  padding: 0.5rem;
+}
+.about_item p{
+  padding: 0.5rem;
+}
+.topic_grid,.sponsor_grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.topic{
+  border: 1px solid black;
+}
+.topic p{
+  padding: 1rem;
+  text-align: center;
+}
+.sponsor_grid .content>*{
+  text-align: center;
+}
+#l4{
+  width:20rem;
+}
+.parent_l4{
+  padding: 2rem 0;
+}
 .fee{
+  margin: auto;
+  width:80%;
   display:flex;
 
 }
 .fee_table{
+  margin-top: 3rem;
   width:50%;
 }
-.fee_cell{
+.fee_cell,.fee_head{
   padding: 1rem;
   display: flex;
   justify-content:space-between;
@@ -115,16 +189,22 @@ header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.cred
 
 .pay_ul{
   list-style: none;
+  margin: auto;
+  width: 85%;
 }
 
 .contact_grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.contact .container{
+  width: 100%;
+}
 .venue_grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
+  grid-auto-rows: 1fr;
 }
 .venue_grid>*{
   width: 100%;
@@ -134,5 +214,50 @@ header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.cred
   grid-template-columns: 1.8fr 1fr;
   column-gap: 1rem;
 }
+.contact_i{
+  width: 64px;
+  height: 64px;
+}
+.wrapper >*{
+  margin: auto;
+  text-align: center;
+}
+section{
+  margin-bottom: 3rem;
+}
+.head{
+  margin-bottom:4rem;
+}
+.reg_ul{
+  width:80%;
+  margin: auto;
 
-  
+}
+.fee_head p{
+  margin: auto;
+}
+#i1{
+  width: 24rem;
+  height: 30rem;
+}
+.date{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row-reverse;
+  border: 1px solid black;
+  width: 75%;
+}
+#l5{
+  width:60px;
+  height: 50px;
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+.left,.right{
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
