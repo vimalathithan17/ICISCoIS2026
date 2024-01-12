@@ -17,11 +17,12 @@ font-family: 'Raleway', sans-serif;
 body{
     margin: 0;
     border: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     color: rgb(15, 16, 53);
 }
 section{
+  padding-top: 2rem;
   /*border: 5px solid rebeccapurple;*/
 }
 nav a{
@@ -35,6 +36,38 @@ nav a{
 div{
   /*border: 5px solid orangered;*/
 }
+.hero{
+  position: relative;
+  padding-top: 0;
+}
+/*.bg{
+  background: url(../images/images-college.jpg);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  background-size: cover;
+}*/
+.about{
+  background: linear-gradient(0deg,rgba(18, 42, 85,0.75),rgba(18, 42, 85, 0.75));
+  color: whitesmoke;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+.home{
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(0deg,rgba(168, 183, 209, 0.493),rgba(171, 194, 238, 0.75)),url(../images/images-college.jpg);
+  display: flex;
+  overflow: hidden;
+  background-size: cover;
+  color: rgb(20, 40, 70);
+  z-index: 2;
+  margin-bottom: 0;
+}
 .bg_container{
   width: 85%;
   margin: auto;
@@ -43,7 +76,11 @@ div{
   margin: 0.5rem;
 }
 .top{
-  margin:3rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(54, 84, 134);
+    padding-bottom: 4rem;
+    color: whitesmoke; 
+    margin: 0;
 }
 #l1{
   width:50px;
@@ -58,13 +95,14 @@ div{
   height:50px;
 }
 .nav_wrapper{
-  position: relative;
-  margin:1rem;
+  position :sticky;
+  top:0;
+
 }
 nav{
   background-color:rgb(54, 84, 134);
   width:100%;
-  position :fixed;
+  
   top:0;
   left: 0;
   display:flex;
@@ -92,8 +130,27 @@ nav{
   margin: auto;
   text-align: center;
 }
-.member .container,.international .member .content,.technical .member .content ,.organizing .member .content{
-  border: 1px solid black;
+.committies{
+  background-color: #f4f4f5;
+  padding: 3rem 0;
+}
+.international .member .content,.technical .member .content ,.organizing .member .content{
+  border: 2.5px solid black;
+  border-radius: 0.7rem;
+  padding-top: 1rem;
+  background: linear-gradient(180deg,rgb(193, 232, 255),rgb(165, 222, 248));
+}
+.international .member .content p,.technical .member .content p,.organizing .member .content p{
+  padding-bottom: 1rem;
+}
+.member .container{
+  border:1px solid rgb(208, 208, 221);
+}
+.member .container .content p{
+  padding-bottom: 1.5rem ;
+}
+.member .container .content{
+  margin-top: 1rem;
 }
 .member .content{
   display: flex;
@@ -139,6 +196,7 @@ header h1,header p,.home h1,.home p,.head{
   margin: 0 auto 1rem auto;
   width: 80%;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.credits{
   text-align: center;
@@ -177,16 +235,24 @@ header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.cred
 
 }
 .fee_table{
-  margin-top: 3rem;
+  margin: 3rem 1.5rem 0 1.5rem;
   width:50%;
+
 }
 .fee_cell,.fee_head{
   padding: 1rem;
   display: flex;
   justify-content:space-between;
   align-items: center;
-}
 
+}
+.fee_cell{
+  background: conic-gradient(rgb(255, 72, 0) ,rgb(255, 145, 0));
+}
+.fee_head
+{
+  background: conic-gradient(rgb(0, 174, 255) ,rgb(0, 174, 255));
+}
 .pay_ul{
   list-style: none;
   margin: auto;
@@ -222,9 +288,7 @@ header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.cred
   margin: auto;
   text-align: center;
 }
-section{
-  margin-bottom: 3rem;
-}
+
 .head{
   margin-bottom:4rem;
 }
@@ -246,8 +310,11 @@ section{
   justify-content: space-around;
   align-items: center;
   flex-flow: row-reverse;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
   width: 75%;
+  background: conic-gradient(rgb(255, 72, 0) ,rgb(255, 145, 0));
 }
 #l5{
   width:60px;
@@ -260,4 +327,53 @@ section{
 .left,.right{
   margin-right: 0.5rem;
   padding: 1rem;
+}
+.call{
+  color: black;
+}
+.bg_img{
+padding-top: 3rem;
+
+  background: #DED0B6;
+ padding-bottom: 3rem;
+}
+.bg_img p{
+
+  font-weight: bolder;
+  color: black;
+}
+.bg_img a{
+  font-weight: 500;
+  color: rgb(245, 57, 32);
+  text-decoration: none;
+} 
+.bg_img a:hover{
+
+  font-weight: bold;
+  color: rgb(255, 16, 16);
+  text-decoration: none;
+}  
+.bg_img .head {
+
+  font-weight: bolder;
+  color: rgb(12, 5, 5);
+} 
+.guide_ul{
+  padding-bottom: 1rem;
+}
+.topics{
+  background-color: #f4f4f5;
+  padding: 3rem 0;
+}
+.topic{
+  background-color: rgb(255, 255, 255);
+}
+.topic p{
+ font-weight: bolder;
+}
+.registration
+{
+  
+background-color:rgb(250, 238, 209);
+padding: 3rem 0;
 }
