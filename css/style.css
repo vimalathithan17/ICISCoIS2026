@@ -330,7 +330,7 @@ header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.cred
   border-radius: 1rem;
   margin-bottom: 0.5rem;
   width: 75%;
-  background: conic-gradient(rgb(255, 72, 0) ,rgb(255, 145, 0));
+  background: conic-gradient(rgb(0, 132, 255) ,rgb(0, 238, 255));
 }
 #l5{
   width:60px;
@@ -497,7 +497,7 @@ padding: 3rem 0;
 }
 .icn{
   display: flex;
-  margin-right: 1rem;
+  margin:1rem;
 }
 @media(width <= 1024px){
   .navbar{
@@ -528,8 +528,9 @@ padding: 3rem 0;
     width: 40px;
     height: 40px;
     align-self:center;
-    margin: 1.4rem;
-    margin-left: 11rem;
+    margin-left: 15%;
+    margin-right: 1rem;
+    
   }
   .navbar{
     display: none;
@@ -636,5 +637,11 @@ padding: 3rem 0;
   .btm_grid{
     display: flex;
     flex-flow: column;
+  }
+}
+@media (width<=360px){
+
+  .icn{
+    margin-left:;
   }
 }
