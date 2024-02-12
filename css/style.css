@@ -526,8 +526,9 @@ padding: 3rem 0;
     width: 40px;
     height: 40px;
     align-self:center;
-    margin-left: 15%;
-    margin-right: 1rem;
+    margin-left: 30%;
+    margin-right: 0rem;
+ 
     
   }
   .navbar{
@@ -643,4 +644,5 @@ padding: 3rem 0;
   .com_grid2{
     grid-template-columns: 1fr;
   }
+  
 }
