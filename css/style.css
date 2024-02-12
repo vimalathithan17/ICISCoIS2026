@@ -37,9 +37,7 @@ section{
   text-decoration: none;
   color: rgb(253, 253, 255);
 }
-div{
-  /*border: 5px solid orangered;*/
-}
+
 .hero{
   position: relative;
   padding-top: 0;
@@ -640,8 +638,11 @@ padding: 3rem 0;
   }
 }
 @media (width<=360px){
-
+/*need to check*/
   .icn{
-    margin-left:;
+    margin-left:0;
+  }
+  .com_grid2{
+    grid-template-columns: 1fr;
   }
 }
