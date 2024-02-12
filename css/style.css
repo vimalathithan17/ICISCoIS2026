@@ -637,7 +637,7 @@ padding: 3rem 0;
     flex-flow: column;
   }
 }
-@media (width<=360px){
+@media (width<=400px){
 /*need to check*/
   .icn{
     justify-content: space-around;
