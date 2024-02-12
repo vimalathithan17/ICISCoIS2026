@@ -640,6 +640,7 @@ padding: 3rem 0;
 @media (width<=360px){
 /*need to check*/
   .icn{
+    justify-content: space-around;
     margin-left:0;
   }
   .com_grid2{
