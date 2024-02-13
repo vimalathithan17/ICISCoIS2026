@@ -497,6 +497,10 @@ padding: 3rem 0;
   display: flex;
   margin:1rem;
 }
+.btm_para,.about_p{
+  text-align: justify;
+  text-justify: auto;
+}
 @media(width <= 1024px){
   .navbar{
     display: grid;
