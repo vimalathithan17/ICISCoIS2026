@@ -198,6 +198,14 @@ h2{
 p{
   font-size: 1.6rem;
 }
+a{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens:auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 header h1,header p,.home h1,.home p,.head{
   margin: 0 auto 1rem auto;
   width: 80%;
@@ -207,7 +215,6 @@ header h1,header p,.home h1,.home p,.head{
 header h1,header p,.home h1,.home p,.head,article p,.contact p,.copyrights,.credits{
   text-align: center;
 }
-
 .about_item{
   padding: 0.5rem;
 }
