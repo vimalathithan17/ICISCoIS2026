@@ -363,13 +363,11 @@ padding-top: 3rem;
 }
 .bg_img a{
   font-weight: 500;
-  color: rgb(245, 57, 32);
+  color: rgb(238, 72, 50);
   text-decoration: none;
 } 
 .bg_img a:hover{
-
-  font-weight: bold;
-  color: rgb(255, 16, 16);
+  color: rgb(175, 20, 0);
   text-decoration: none;
 }  
 .bg_img .head {
