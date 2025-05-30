@@ -93,8 +93,10 @@ section{
   height:60px;
 }
 #l2{
-  width:80px;
-  height:60px;
+  /* width:80px;
+  height:60px; */
+  /* width:80%;
+  height:80%; */
   filter:   invert(0%) sepia(12%) saturate(1442%) hue-rotate(285deg) brightness(91%) contrast(100%);
 }#l3{
   width:60px;
@@ -512,6 +514,18 @@ padding: 3rem 0;
 .btm_para,.about_p{
   text-align: justify;
   text-justify: auto;
+}
+@media(width>425px){
+  .logo{
+  margin: 0.1rem;
+}
+#l2{
+  /* width:80px;
+  height:60px; */
+  width:70%;
+  height:70%;
+  filter:   invert(0%) sepia(12%) saturate(1442%) hue-rotate(285deg) brightness(91%) contrast(100%);
+}
 }
 @media(width <= 1024px){
   .navbar{
