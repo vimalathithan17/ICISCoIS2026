@@ -510,6 +510,7 @@ padding: 3rem 0;
 .icn{
   display: flex;
   margin:1rem;
+  align-items: center;
 }
 .btm_para,.about_p{
   text-align: justify;
