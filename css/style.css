@@ -516,6 +516,12 @@ padding: 3rem 0;
   text-align: justify;
   text-justify: auto;
 }
+.cmt{
+  width: 94%;
+  margin: auto;
+  text-align: justify;
+  text-justify: auto;
+}
 @media(width>425px){
   .logo{
   margin: 0.1rem;
