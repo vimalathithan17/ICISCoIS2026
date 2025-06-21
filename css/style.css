@@ -133,22 +133,30 @@ nav{
   column-gap: 2rem;
   row-gap: 3rem;
   grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
 }
 .com_grid1>.member,.com_grid1>.member>*{
   margin: auto;
   text-align: center;
 }
+.com_grid3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  column-gap: 2rem;
+  row-gap: 3rem;
+  grid-auto-rows: 1fr;
+}
 .committies{
   background-color: rgb(255, 255, 255);
   padding: 3rem 0;
 }
-.international .member .content,.technical .member .content ,.organizing .member .content{
+.Madras .member .content,.international .member .content,.technical .member .content ,.organizing .member .content{
   border: 2.5px solid black;
   border-radius: 0.7rem;
   padding-top: 1rem;
   background: linear-gradient(180deg,#ffe9c5,#ffdba1);
 }
-.international .member .content p,.technical .member .content p,.organizing .member .content p{
+.Madras .member .content p,.international .member .content p,.technical .member .content p,.organizing .member .content p{
   padding-bottom: 1rem;
 }
 .member .container{
@@ -163,6 +171,8 @@ nav{
 .member .content{
   display: flex;
   flex-flow: column;
+  width: 100%;
+  height: 100%;
 }
 .name_p,.designation_p{
   display: inline-block;
@@ -181,6 +191,7 @@ text-align: center;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
   grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
 }
 .organizing .member{
   width: 90%;
@@ -598,7 +609,17 @@ padding: 3rem 0;
     padding-bottom: 0;
   }
 }
-@media(width<=425px){
+@media(width<=650px){
+.com_grid3{
+  grid-template-columns: 1fr;
+}
+.com_grid3 .member{
+  width: 60%;
+  margin: auto;
+  height: 100%;
+}
+}
+@media(width<=450px){
   
   root{
     font-size: 8px;
