@@ -374,15 +374,6 @@ padding-top: 3rem;
   font-weight: bolder;
   color: black;
 }
-.bg_img a{
-  font-weight: 500;
-  color: rgb(238, 72, 50);
-  text-decoration: none;
-} 
-.bg_img a:hover{
-  color: rgb(175, 20, 0);
-  text-decoration: none;
-}  
 .bg_img .head {
 
   font-weight: bolder;
