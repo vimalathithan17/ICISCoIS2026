@@ -259,6 +259,14 @@ p{ color:var(--text); line-height:1.6; text-align: justify; }
 /* Ensure sponsor logos appear roughly the same visual size */
 .sponsor img{ max-height:72px; width:auto; object-fit:contain; display:block; margin:0 auto; }
 
+/* Anniversary logos (75 & 100 years) — used in header and sponsor area */
+.anniv_logo{ max-height:48px; width:auto; object-fit:contain; display:block; }
+@media (max-width: 768px){
+  /* make anniversary logos slightly smaller on mobile */
+  .anniv_logo{ max-height:28px; }
+}
+
+
 /* Equal height cards per row for committee grids */
 .com_grid1 > .member, .com_grid2 > .member, .com_grid3 > .member { display:flex; }
 .com_grid1 > .member .content, .com_grid1 > .member .container,
@@ -297,14 +305,12 @@ p{ color:var(--text); line-height:1.6; text-align: justify; }
   .venue_grid{ grid-template-columns: 1fr; }
 }
 @media (max-width: 768px){
-  /* Make header icons (3 logos) + hamburger evenly spaced */
-  .icn{ display:grid; grid-template-columns: repeat(4, 1fr); width:100%; align-items:center; gap:0; }
-  /* Smaller logo sizes so all three fit nicely */
+  /* Make header icons (logos) + hamburger use flex on narrow screens */
+  .icn{ display:flex; align-items:center; gap:0.5rem; width:100%; flex-wrap:wrap; }
+  /* Smaller logo sizes so all logos fit nicely on mobile */
   .icn .logo{ max-height: 28px; }
-  #l1{ justify-self:start; }
-  #l2{ justify-self:center; }
-  #l3{ justify-self:center; display:block; }
-  #menu{ display:inline-block; width:26px; height:26px; filter: brightness(0) saturate(100%); position: static; right:auto; top:auto; transform:none; z-index: 2; justify-self:end; }
+  /* push the menu to the far right */
+  #menu{ display:inline-block; width:26px; height:26px; filter: brightness(0) saturate(100%); position: static; right:auto; top:auto; transform:none; z-index: 2; margin-left:auto; }
   .navbar{ display:none; position:absolute; right:1rem; top: calc(100% + 8px); background:var(--color-surface); padding:0.6rem; border-radius:10px; box-shadow:0 8px 24px rgba(2,6,23,0.12); flex-direction:column; min-width:220px; border:1px solid rgba(2,6,23,0.06); opacity:0; transform: translateY(-6px); transition: opacity .15s ease, transform .15s ease; }
   .navbar.navbar--open{ display:flex; opacity:1; transform: translateY(0); }
   .navbar .nave_item{ background:transparent; color:var(--text); border-radius:6px; padding:0.6rem 0.9rem; }
