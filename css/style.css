@@ -336,3 +336,18 @@ p{ color:var(--text); line-height:1.6; text-align: justify; }
   .date_grid{ grid-template-columns: 1fr; }
   h2.head{ font-size:1.4rem; }
 }
+
+/* History section */
+.history{ padding: 2.5rem 0; background: linear-gradient(180deg, #ffffff, #f7fbff); }
+.history_content{ display:flex; flex-direction:column; gap:1.5rem; max-width:900px; margin:0 auto; }
+.history_item{ background:var(--color-surface); border-radius:var(--radius); padding:1.5rem 2rem; box-shadow: 0 8px 24px rgba(2,6,23,0.06); border-left: 4px solid var(--color-primary); }
+.history_title{ font-family: 'Raleway', sans-serif; font-weight:700; font-size:1.4rem; color:var(--color-primary-600); margin: 0 0 0.5rem 0; }
+.history_dates{ font-weight:700; font-size:1.1rem; color:var(--color-primary); margin: 0.3rem 0; }
+.history_venue{ font-weight:600; color:var(--text); margin: 0.3rem 0; font-style: italic; }
+.history_desc, .history_themes, .history_proceedings{ color:var(--text); line-height:1.7; margin: 0.8rem 0; text-align: justify; }
+.history_themes strong, .history_proceedings strong{ color: var(--color-primary-600); }
+.history_proceedings a{ color: var(--color-primary); font-weight:700; text-decoration:none; border-bottom: 2px solid var(--color-primary); transition: border-color .2s ease; }
+.history_proceedings a:hover{ border-color: var(--color-primary-600); }
+@media (max-width: 768px){
+  .history_item{ padding:1rem 1.2rem; }
+}
