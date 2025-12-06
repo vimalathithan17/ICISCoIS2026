@@ -333,8 +333,8 @@ p{ color:var(--text); line-height:1.6; text-align: justify; }
   .contact .wrapper p{ display:flex; flex-direction:column; align-items:center; gap:0.3rem; }
   .contact .wrapper p strong{ display:block; }
   .contact .wrapper p em{ display:block; }
-  /* Registration section: match Authors Guidelines styling */
-  .registration .reg_ul{ max-width:720px; margin: 0 auto; }
+  /* Registration section: match Authors Guidelines styling and fee cards width */
+  .registration .reg_ul{ max-width:320px; margin: 0 auto; }
   /* Payment table: fit the screen nicely */
   .payment .pay_ul{ width:90vw; }
   .payment .list-group-item{ grid-template-columns: 1fr; }
