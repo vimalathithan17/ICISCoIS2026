@@ -222,7 +222,9 @@ p{ color:var(--text); line-height:1.6; text-align: justify; }
 
 /* Call for papers and guides */
 .bg_img{ background: linear-gradient(180deg, #ffffff, #fbfbff); padding: 2rem 0; border-radius:8px; }
-.guide_ul{ padding-left:1.2rem; }
+.guide_ul{ width:100%; max-width:720px; padding-left: 1.5rem; list-style: disc; margin: 0 auto; }
+.guide_li{ margin-bottom: 0.8rem; line-height: 1.6; }
+.guide_li p{ max-width: 100%; overflow-wrap: break-word; padding-left: 0; padding-right: 0; text-align: left; }
 
 /* Topics */
 .topics_head_p{ text-align:center; color:var(--color-muted); margin: 0 0 1rem 0; }
